@@ -224,7 +224,7 @@
         .accordion-button.collapsed .faq-toggle-icon {
             background-color: #f0f0f0; color: var(--text-dark); transform: rotate(0);
         }
-        .accordion-body { padding: 0 0 30px 65px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
+        .accordion-body { padding: 0 0 30px 65px; color: var(--primary-maroon); font-size: 0.95rem; line-height: 1.7; }
 
         .footer-wrapper { background-color: var(--primary-maroon); padding: 40px 0 20px 0; margin-top: 40px; }
         .footer-card { background-color: white; border-radius: 35px; padding: 50px 60px; margin-bottom: 30px; }
