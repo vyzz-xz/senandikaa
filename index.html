@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Elektronik Arsip dan Dokumen - Parasika</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO & NAVBAR WRAPPER -->
+    <div class="hero-wrapper">
+        
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="img/logo.jpg" alt="Parasika">
+                    Parasika
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="bi bi-list text-white fs-2"></i>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto text-center mb-3 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Achievement</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Internal App
+                            </a>
+                            <ul class="dropdown-menu text-center text-lg-start">
+                                <li><a class="dropdown-item" href="#">E-Archive</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-center mt-2 mt-lg-0">
+                        <a href="auth/login.php" class="btn-login">
+                            <i class="bi bi-box-arrow-in-right"></i> Login
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO IMAGE -->
+        <div class="hero-img-container">
+            <img src="img/hero.jpg" alt="Kegiatan Parasika">
+        </div>
+
+    </div>
+
+    <!-- HERO CONTENT (Teks Bawah Gambar) -->
+    <div class="container hero-content">
+        <div class="row align-items-center">
+            <!-- Left Side: Title & Button -->
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h1 class="hero-title">Sistem Elektronik Arsip dan Dokumen</h1>
+                <h1 class="hero-title hero-title-maroon">Parasika</h1>
+                <a href="auth/login.php" class="btn-maroon mt-3">Masuk Ke Dashboard</a>
+            </div>
+            
+            <!-- Right Side: Text, Logo & Stats -->
+            <div class="col-lg-6">
+                <div class="row align-items-center mb-4">
+                    <div class="col-12">
+                        <p class="hero-desc">
+                            Aplikasi E-Archive terpusat untuk menyimpan, mengelola, dan menemukan kembali dokumen organisasi UKM Kesenian Kampus dengan mudah dan aman.
+                        </p>
+                    </div>
+                </div>
+                <div class="stat-container">
+                    <img src="img/logo.jpg" alt="Logo Parasika" class="parasika-logo-large d-none d-sm-block">
+                    
+                    <div class="stat-box">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-text">Surat<br>Tersimpan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FITUR SECTION -->
+    <div class="container py-4 py-lg-5">
+        <h2 class="section-title">Fitur</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4 col-sm-10">
+                <div class="feature-card">
+                    <i class="bi bi-cloud-arrow-up feature-icon"></i>
+                    <p class="feature-text">Dokumen disimpan dengan teknologi terdistribusi ke server eksternal untuk menjaga kapasitas server utama.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-10">
+                <div class="feature-card">
+                    <i class="bi bi-search feature-icon"></i>
+                    <p class="feature-text">Temukan dokumen penting dalam hitungan detik dengan fitur pencarian live berbasis kategori.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-10">
+                <div class="feature-card">
+                    <i class="bi bi-shield-check feature-icon"></i>
+                    <p class="feature-text">Hak akses terbagi menjadi tiga level (Sekretaris, Ketua, Anggota) sesuai tupoksi dan wewenang.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ SECTION -->
+    <div class="container faq-section">
+        <h2 class="section-title text-center mb-5">Frequently Asked<br>Question</h2>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                <span class="faq-number">01</span>
+                                <span class="faq-title">Apa itu PARASIKA?</span>
+                                <span class="faq-toggle-icon"><i class="bi bi-plus"></i></span>
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                PARASIKA (Paguyuban Rakyat Seni Universitas Singaperbangsa Karawang) adalah Unit Kegiatan Mahasiswa (UKM) seni di UNSIKA yang aktif mengembangkan bakat mahasiswa dalam paduan suara, vokal, tari, band, dan seni pertunjukan.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                <span class="faq-number">02</span>
+                                <span class="faq-title">Ada berapa cabang seni di Parasika?</span>
+                                <span class="faq-toggle-icon"><i class="bi bi-plus"></i></span>
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Kami memiliki beberapa divisi seni utama, di antaranya adalah Divisi Paduan Suara Mahasiswa (PSM), Divisi Tari Tradisional dan Modern, Divisi Teater, serta Divisi Musik/Band.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                <span class="faq-number">03</span>
+                                <span class="faq-title">Bagaimana cara bergabung dengan PARASIKA?</span>
+                                <span class="faq-toggle-icon"><i class="bi bi-plus"></i></span>
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Pendaftaran anggota baru biasanya dibuka pada awal semester ganjil melalui kegiatan Open Recruitment (Oprec). Informasi lengkap akan selalu kami perbarui melalui akun media sosial resmi kami.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER WRAPPER -->
+    <div class="footer-wrapper">
+        <div class="container">
+            <!-- White Card Inside Footer -->
+            <div class="footer-card">
+                <div class="row h-100">
+                    
+                    <!-- Column 1: Logo & Socials -->
+                    <div class="col-lg-3 d-flex flex-column justify-content-between mb-4 mb-lg-0">
+                        <div>
+                            <img src="img/logo.jpg" alt="Logo" class="footer-logo">
+                        </div>
+                        <div class="mt-4">
+                            <a href="#" class="social-circle"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-circle"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Information -->
+                    <div class="col-lg-3 mb-4 mb-lg-0">
+                        <div class="footer-heading">INFORMATION</div>
+                        <a href="#" class="footer-link">Privacy</a>
+                        <a href="#" class="footer-link">FAQ</a>
+                        <a href="#" class="footer-link">Shipping and payment</a>
+                        <a href="#" class="footer-link">Partners</a>
+                        <a href="#" class="footer-link">Blog</a>
+                        <a href="#" class="footer-link">Contacts</a>
+                    </div>
+
+                    <!-- Column 3: Menu & Address di bawahnya -->
+                    <div class="col-lg-3 d-flex flex-column justify-content-between mb-4 mb-lg-0">
+                        <div>
+                            <div class="footer-heading">MENU</div>
+                            <a href="#" class="footer-link">For a couple</a>
+                            <a href="#" class="footer-link">For him</a>
+                            <a href="#" class="footer-link">For her</a>
+                        </div>
+                        <div class="mt-4 mt-lg-0">
+                            <!-- Alamat diletakkan sejajar bawah kolom menu -->
+                            <p class="footer-contact-text text-muted" style="font-size: 0.85rem;">
+                                Jl. HS. Ronggo Waluyo, Puseurjaya, Telukjambe Timur, Karawang 41361
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Column 4: Contact & Cassette Art -->
+                    <div class="col-lg-3 d-flex flex-column align-items-lg-end text-lg-end">
+                        <div>
+                            <button class="btn-request">Request a call</button>
+                            <p class="footer-contact-text fw-bold mt-2">+1 (999) 999-99-99</p>
+                            <p class="footer-contact-text">info@logoipsum.com</p>
+                        </div>
+                        
+                        <!-- Inline SVG for Cassette Tape (Didorong ke bawah menggunakan mt-auto) -->
+                        <div class="mt-auto pt-4">
+                            <svg class="cassette-img" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="120" rx="10" fill="#cc8da1" />
+                                <rect x="10" y="10" width="180" height="100" rx="5" fill="#a55a73" />
+                                <rect x="20" y="20" width="160" height="40" rx="5" fill="#fcfcfc" />
+                                <circle cx="60" cy="40" r="12" fill="#333" />
+                                <circle cx="60" cy="40" r="4" fill="#fff" />
+                                <circle cx="140" cy="40" r="12" fill="#333" />
+                                <circle cx="140" cy="40" r="4" fill="#fff" />
+                                <path d="M 75 40 L 125 40" stroke="#333" stroke-width="2" />
+                                <rect x="40" y="80" width="120" height="20" rx="10" fill="#843952" />
+                                <circle cx="50" cy="90" r="3" fill="#333" />
+                                <circle cx="150" cy="90" r="3" fill="#333" />
+                            </svg>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Bottom Copyright (Luar Kartu Putih) -->
+            <div class="footer-bottom-text">
+                <span>© 2026 — Copyright Kelompok 4</span>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS & Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

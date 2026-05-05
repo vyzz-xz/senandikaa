@@ -1,0 +1,492 @@
+        :root {
+            --primary-maroon: #6E1A37; 
+            --text-dark: #1b1819;
+            --text-muted: #8e8e8e;
+            --bg-light: #fafafa;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            overflow-x: hidden;
+            /* Untuk Firefox, IE, dan Edge */
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* --- HERO & NAVBAR CONTAINER --- */
+        .hero-wrapper {
+            padding: 20px;
+            position: relative;
+        }
+
+        /* --- NAVBAR GLASSMORPHISM COMPACT --- */
+        .navbar-custom {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 750px;
+            background: rgba(30, 15, 15, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 50px;
+            padding: 8px 16px;
+            z-index: 1000;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+        }
+        .navbar-custom .nav-link {
+            color: rgba(255, 255, 255, 0.85) !important;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .navbar-custom .nav-link:hover {
+            color: #ffffff !important;
+        }
+        .navbar-brand img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin-right: 12px;
+            object-fit: cover;
+            background-color: white;
+            padding: 2px;
+        }
+        .navbar-brand {
+            color: white !important;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .navbar-toggler {
+            border: none;
+            box-shadow: none !important;
+            padding: 0;
+        }
+        .navbar-toggler:focus {
+            outline: none;
+        }
+        
+        /* TOMBOL LOGIN */
+        .btn-login {
+            background-color: var(--primary-maroon);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            color: white;
+            border-radius: 50px;
+            padding: 8px 24px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .btn-login:hover {
+            background-color: #5a152d;
+            color: white;
+            border-color: white;
+        }
+
+        /* --- HERO IMAGE --- */
+        .hero-img-container {
+            width: 100%;
+            height: 60vh;
+            min-height: 450px;
+            border-radius: 40px;
+            overflow: hidden;
+            position: relative;
+        }
+        .hero-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        /* --- CONTENT SECTION --- */
+        .hero-content {
+            padding: 40px 0 60px 0;
+        }
+        .hero-title {
+            font-weight: 800;
+            font-size: clamp(2.2rem, 4vw, 3.2rem);
+            line-height: 1.15;
+            letter-spacing: -1px;
+            color: var(--text-dark);
+            margin-bottom: 0;
+        }
+        .hero-title-maroon {
+            color: var(--primary-maroon);
+            margin-bottom: 20px;
+        }
+        .btn-maroon {
+            background-color: var(--primary-maroon);
+            color: white;
+            border-radius: 50px;
+            padding: 12px 32px;
+            font-weight: 600;
+            border: none;
+            transition: transform 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-maroon:hover {
+            transform: translateY(-2px);
+            background-color: #5a152d;
+            color: white;
+        }
+        .hero-desc {
+            font-size: 1.05rem;
+            color: var(--text-dark);
+            line-height: 1.8;
+            margin-bottom: 0;
+            text-align: left; 
+        }
+        
+        /* Logo & Stat Box Container */
+        .stat-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: flex-end;
+            margin-top: 15px;
+        }
+        .parasika-logo-large {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: contain;
+        }
+        .stat-box {
+            background-color: var(--primary-maroon);
+            color: white;
+            border-radius: 20px;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            min-width: 240px;
+        }
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 600;
+            line-height: 1;
+            margin: 0;
+        }
+        .stat-text {
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+
+        /* --- FITUR SECTION --- */
+        .section-title {
+            color: var(--primary-maroon);
+            font-weight: 800;
+            font-size: clamp(2rem, 3vw, 2.5rem);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .feature-card {
+            background-color: var(--primary-maroon);
+            border-radius: 24px;
+            padding: 40px 30px;
+            color: white;
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(110, 26, 55, 0.2);
+        }
+        .feature-icon {
+            font-size: 4.5rem;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+        .feature-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            font-weight: 400;
+            opacity: 0.95;
+        }
+
+        /* --- FAQ SECTION --- */
+        .faq-section {
+            padding: 80px 0;
+        }
+        .accordion-item {
+            border: none;
+            border-bottom: 1px solid #eaeaea;
+            margin-bottom: 10px;
+            background: transparent;
+        }
+        .accordion-item:last-child {
+            border-bottom: none;
+        }
+        .accordion-button {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            padding: 25px 0;
+            display: flex;
+            align-items: center;
+        }
+        .accordion-button::after {
+            display: none;
+        }
+        .faq-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #d1d1d1;
+            margin-right: 25px;
+            width: 40px;
+        }
+        .faq-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary-maroon);
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .accordion-button.collapsed .faq-title {
+            color: var(--text-dark);
+        }
+        .faq-toggle-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            flex-shrink: 0;
+        }
+        .accordion-button:not(.collapsed) .faq-toggle-icon {
+            background-color: var(--primary-maroon);
+            color: white;
+            transform: rotate(45deg);
+        }
+        .accordion-button.collapsed .faq-toggle-icon {
+            background-color: #f0f0f0;
+            color: var(--text-dark);
+        }
+        .accordion-body {
+            padding: 0 0 30px 65px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* --- FOOTER SECTION --- */
+        .footer-wrapper {
+            background-color: var(--primary-maroon);
+            padding: 40px 0 20px 0;
+            margin-top: 40px;
+        }
+        .footer-card {
+            background-color: white;
+            border-radius: 35px;
+            padding: 50px 60px;
+            margin-bottom: 30px;
+            min-height: 320px; /* Memastikan ruang footer cukup untuk sebaran flex */
+        }
+        .footer-logo {
+            width: 90px;
+        }
+        .footer-heading {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: #a0a0a0;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .footer-link {
+            display: block;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .footer-link:hover {
+            color: var(--primary-maroon);
+        }
+        .btn-request {
+            background-color: var(--primary-maroon);
+            color: white;
+            border-radius: 8px;
+            padding: 10px 28px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: none;
+            margin-bottom: 15px;
+            transition: opacity 0.2s;
+        }
+        .btn-request:hover {
+            opacity: 0.9;
+        }
+        .footer-contact-text {
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            margin: 0;
+        }
+        .cassette-img {
+            width: 100%;
+            max-width: 160px;
+        }
+        .social-circle {
+            width: 38px;
+            height: 38px;
+            background-color: var(--text-dark);
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.2s;
+        }
+        .social-circle:hover {
+            background-color: var(--primary-maroon);
+        }
+        .footer-bottom-text {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 400;
+            padding: 0 10px;
+        }
+        .footer-bottom-text a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-bottom-text a:hover {
+            color: #ffffff;
+        }
+
+        /* --- RESPONSIVE ADJUSTMENTS --- */
+        @media (max-width: 991px) {
+            .navbar-custom {
+                width: 92%;
+                padding: 12px 20px;
+                top: 30px;
+            }
+            .navbar-collapse {
+                margin-top: 15px;
+                background-color: rgba(0, 0, 0, 0.2);
+                border-radius: 20px;
+                padding: 15px;
+            }
+            .hero-img-container {
+                border-radius: 30px;
+                min-height: 350px;
+            }
+            .hero-title {
+                text-align: center;
+            }
+            .hero-desc {
+                text-align: center !important; /* Di HP berubah jadi rata tengah */
+                margin-top: 15px;
+            }
+            .hero-content .btn-maroon {
+                display: block;
+                width: max-content;
+                margin: 0 auto;
+            }
+            .stat-container {
+                justify-content: center;
+                margin-top: 30px;
+            }
+            .accordion-body {
+                padding-left: 0;
+            }
+            .faq-number {
+                margin-right: 15px;
+            }
+            .footer-card {
+                padding: 40px 30px;
+            }
+            .cassette-img {
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .hero-wrapper {
+                padding: 10px;
+            }
+            .navbar-custom {
+                width: 95%;
+                top: 20px;
+                border-radius: 30px;
+            }
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            .stat-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            .parasika-logo-large {
+                width: 80px;
+                height: 80px;
+            }
+            .stat-box {
+                width: 100%;
+                justify-content: center;
+                padding: 15px 20px;
+            }
+            .stat-number {
+                font-size: 3rem;
+            }
+            .feature-card {
+                padding: 30px 20px;
+            }
+            .faq-section {
+                padding: 50px 0;
+            }
+            .faq-number {
+                font-size: 1.5rem;
+            }
+            .faq-title {
+                font-size: 1.05rem;
+            }
+            .footer-card {
+                padding: 30px 20px;
+            }
+            .footer-bottom-text {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            /* Penyesuaian Kolom Footer di HP */
+            .col-lg-3 {
+                margin-bottom: 30px;
+            }
+        }
